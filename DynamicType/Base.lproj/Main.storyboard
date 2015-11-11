@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWJ-Wv-VMH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="ULQ-2z-7Jy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLk-78-Y1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QWJ-Wv-VMH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="egy-dp-xab"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="psn-mT-EcP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BEu-gi-uAa" kind="relationship" relationship="rootViewController" id="T4J-AP-aOu"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="756" y="0.0"/>
+        </scene>
+        <!--Manual Constraints-->
+        <scene sceneID="hED-HY-v1G">
+            <objects>
+                <viewController id="BEu-gi-uAa" customClass="ViewController" customModule="DynamicType" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WfI-UF-pYS"/>
+                        <viewControllerLayoutGuide type="bottom" id="oBa-tw-xmC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnw-IW-y6m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NNG-tg-Ahp">
+                                <rect key="frame" x="20" y="70" width="291" height="33"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="DjP-5j-p3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVj-Eb-pM7">
+                                <rect key="frame" x="20" y="108" width="233" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="Lorem ipsum dolor sit er elit lamet"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Textfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-ec-kfv">
+                                <rect key="frame" x="261" y="108" width="319" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="hHu-co-lu4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dnT-nC-VlL" customClass="SegmentedControl" customModule="DynamicType" customModuleProvider="target">
+                                <rect key="frame" x="319" y="72" width="261" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="First segment"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="apportionWidths" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-hc-AJk">
+                                <rect key="frame" x="20" y="146" width="560" height="434"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NNG-tg-Ahp" firstAttribute="leading" secondItem="Mnw-IW-y6m" secondAttribute="leading" constant="20" symbolic="YES" id="BGi-4d-oCj"/>
+                            <constraint firstItem="dnT-nC-VlL" firstAttribute="top" secondItem="WfI-UF-pYS" secondAttribute="bottom" constant="8" symbolic="YES" id="Ddf-pg-664"/>
+                            <constraint firstItem="dnT-nC-VlL" firstAttribute="leading" secondItem="NNG-tg-Ahp" secondAttribute="trailing" constant="8" symbolic="YES" id="QCH-OF-k5y"/>
+                            <constraint firstAttribute="trailing" secondItem="dnT-nC-VlL" secondAttribute="trailing" constant="20" symbolic="YES" id="Vog-AZ-hwN"/>
+                            <constraint firstItem="Prn-hc-AJk" firstAttribute="leading" secondItem="Mnw-IW-y6m" secondAttribute="leading" constant="20" symbolic="YES" id="cUI-wG-U4B"/>
+                            <constraint firstItem="FVj-Eb-pM7" firstAttribute="centerY" secondItem="cgk-ec-kfv" secondAttribute="centerY" id="dhL-x5-iA9"/>
+                            <constraint firstItem="cgk-ec-kfv" firstAttribute="leading" secondItem="FVj-Eb-pM7" secondAttribute="trailing" constant="8" symbolic="YES" id="jxf-V1-aPr"/>
+                            <constraint firstItem="Prn-hc-AJk" firstAttribute="top" secondItem="cgk-ec-kfv" secondAttribute="bottom" constant="8" symbolic="YES" id="kd8-e2-PTK"/>
+                            <constraint firstAttribute="trailing" secondItem="cgk-ec-kfv" secondAttribute="trailing" constant="20" symbolic="YES" id="lVe-fo-fvh"/>
+                            <constraint firstItem="FVj-Eb-pM7" firstAttribute="leading" secondItem="Mnw-IW-y6m" secondAttribute="leading" constant="20" symbolic="YES" id="nnM-R4-loz"/>
+                            <constraint firstItem="cgk-ec-kfv" firstAttribute="top" secondItem="dnT-nC-VlL" secondAttribute="bottom" constant="8" symbolic="YES" id="r5l-hb-CuS"/>
+                            <constraint firstItem="NNG-tg-Ahp" firstAttribute="centerY" secondItem="dnT-nC-VlL" secondAttribute="centerY" id="vt1-UN-rfz"/>
+                            <constraint firstAttribute="bottom" secondItem="Prn-hc-AJk" secondAttribute="bottom" constant="20" symbolic="YES" id="wE1-zu-H7K"/>
+                            <constraint firstAttribute="trailing" secondItem="Prn-hc-AJk" secondAttribute="trailing" constant="20" symbolic="YES" id="xnh-ju-7DY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Manual Constraints" id="HQf-uS-qtH">
+                        <barButtonItem key="backBarButtonItem" title=" " id="50i-22-6IZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Stack Views" id="b6d-gP-KNl">
+                            <connections>
+                                <segue destination="PbA-Ls-CVy" kind="show" id="G6k-am-WPB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button" destination="FVj-Eb-pM7" id="nQT-jF-Nso"/>
+                        <outlet property="label" destination="NNG-tg-Ahp" id="LMI-dL-Jct"/>
+                        <outlet property="segmentedControl" destination="dnT-nC-VlL" id="Q4W-0X-UeF"/>
+                        <outlet property="textField" destination="cgk-ec-kfv" id="tIO-rp-ao3"/>
+                        <outlet property="textView" destination="Prn-hc-AJk" id="0tG-di-pNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyu-eR-qqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="0.0"/>
+        </scene>
+        <!--Stack Views-->
+        <scene sceneID="vDn-6d-8Ue">
+            <objects>
+                <viewController title="Stack Views" id="PbA-Ls-CVy" customClass="ViewController" customModule="DynamicType" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YoZ-gc-cjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="doK-jo-Drn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMq-7l-jhO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MJX-OC-yeX">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZKR-38-X53">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0vt-Lq-dZA">
+                                                <rect key="frame" x="0.0" y="0.0" width="291" height="33"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="sWO-tT-aAT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-Hi-ecb" customClass="SegmentedControl" customModule="DynamicType" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="261" height="34"/>
+                                                <animations/>
+                                                <segments>
+                                                    <segment title="First segment"/>
+                                                    <segment title="Second"/>
+                                                    <segment title="Third"/>
+                                                    <segment title="Fourth"/>
+                                                </segments>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="apportionWidths" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G2u-wx-gBi">
+                                        <rect key="frame" x="0.0" y="41" width="560" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-VG-NtQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="233" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <state key="normal" title="Lorem ipsum dolor sit er elit lamet"/>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Textfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-At-ihc">
+                                                <rect key="frame" x="241" y="0.0" width="319" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="sYh-AU-E4p"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QJE-cd-seU">
+                                        <rect key="frame" x="0.0" y="79" width="560" height="441"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MJX-OC-yeX" firstAttribute="top" secondItem="YoZ-gc-cjG" secondAttribute="bottom" constant="8" symbolic="YES" id="BgY-b8-1ee"/>
+                            <constraint firstAttribute="trailing" secondItem="MJX-OC-yeX" secondAttribute="trailing" constant="20" symbolic="YES" id="Tfy-v1-Y0G"/>
+                            <constraint firstItem="MJX-OC-yeX" firstAttribute="leading" secondItem="rMq-7l-jhO" secondAttribute="leading" constant="20" symbolic="YES" id="Tnm-by-AjY"/>
+                            <constraint firstItem="doK-jo-Drn" firstAttribute="top" secondItem="MJX-OC-yeX" secondAttribute="bottom" constant="8" symbolic="YES" id="XH3-Tf-k5c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="D1V-VG-NtQ" id="XxV-Li-b9Q"/>
+                        <outlet property="label" destination="0vt-Lq-dZA" id="n8t-Ag-FAV"/>
+                        <outlet property="segmentedControl" destination="7d2-Hi-ecb" id="00q-pV-gdV"/>
+                        <outlet property="textField" destination="KVe-At-ihc" id="TqZ-xT-QOs"/>
+                        <outlet property="textView" destination="QJE-cd-seU" id="ahn-WH-tVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6v-2z-Vmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2277" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
